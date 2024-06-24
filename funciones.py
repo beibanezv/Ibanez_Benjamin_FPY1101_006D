@@ -38,15 +38,6 @@ def guardar_archivo():
         for producto in inventario:
             f.write(f"{producto['CODIGO']} - {producto['NOMBRE']} - {producto['CANTIDAD']} - {producto['PRECIO']}\n")
 
-def menu(opcion):
-    opcion==(agregar_producto)
-    print("Usted eligio la opcion de agregar producto que producto le gustaria agregrar --->")
-  
-    opcion==(modificar_producto)
-    print("Usted eligio la opcion de modificar producto que producto le gustaria modificar --->")
-   
-    opcion==(eliminar_producto)
-    print("Usted eligio la opcion de eliminar producto cual producto le gustaria eliminar --->")
+def menu():
+    print("1.-agregrar producto\n 2.- ver poducto\n 3.- modificar producto\n 4.- eliminar producto\n 5.- guardar producto")
     
-    opcion==(guardar_archivo)
-    print("Usted eligio la opcion de guardar ")
