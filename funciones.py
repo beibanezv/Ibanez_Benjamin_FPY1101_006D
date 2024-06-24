@@ -43,19 +43,19 @@ def menu():
 opcion=()
 
 opcion=input("ingrese la opcion que sea elegir")
-if opcion == 1:
+if opcion == '1':
     agregar_producto()
     
-elif opcion == 2:
+elif opcion == '2':
     ver_productos()
 
-elif opcion == 3:
+elif opcion == '3':
     modificar_producto
 
-elif opcion == 4:
+elif opcion == '4':
     eliminar_producto
 
-elif opcion == 5:
+elif opcion == '5':
     guardar_archivo
 
 else:
