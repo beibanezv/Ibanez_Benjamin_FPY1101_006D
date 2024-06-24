@@ -40,4 +40,27 @@ def guardar_archivo():
 
 def menu():
     print("1.-agregrar producto\n 2.- ver poducto\n 3.- modificar producto\n 4.- eliminar producto\n 5.- guardar producto")
+opcion=()
+
+opcion=input("ingrese la opcion que sea elegir")
+if opcion == 1:
+    agregar_producto()
+    
+elif opcion == 2:
+    ver_productos()
+
+elif opcion == 3:
+    modificar_producto
+
+elif opcion == 4:
+    eliminar_producto
+
+elif opcion == 5:
+    guardar_archivo
+
+else:
+    print("usted eligio una opcion que no esta en el menu porfavor agregrar una opcion que este en el menu del 1 al 5 ")
+ 
+
+
     
