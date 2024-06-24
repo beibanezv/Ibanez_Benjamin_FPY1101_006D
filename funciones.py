@@ -10,7 +10,7 @@ inventario = [
 ]
 
 def agregar_producto():
-    codigo = input("Ingrese el código del producto a ingresar en el inventario: ")
+    codigo = int(input("Ingrese el código del producto a ingresar en el inventario: "))
     nombre = input("Ingrese el nombre del producto a ingresar: ").capitalize()
     cantidad = int(input("Ingrese el stock del producto a ingresar: "))
     precio = int(input("Ingrese el precio del producto a ingresar: "))
@@ -48,8 +48,8 @@ def guardar_archivo():
             f.write(f"{producto['CODIGO']} - {producto['NOMBRE']} - {producto['CANTIDAD']} - {producto['PRECIO']}\n")
 
 def menu():
-    print("1. Agregar producto\n2. Ver poducto\n3. modificar producto\n4. Eliminar producto\n5. Guardar inventario\n6.Salir del programa.")
-    opcion=input("ingrese la opcion que sea elegir")
+    print("1. Agregar producto\n2. Ver poductos\n3. modificar producto\n4. Eliminar producto\n5. Guardar inventario\n6. Salir del programa.")
+    opcion=input("Ingrese la opcion que sea elegir: ")
     if opcion == "1":
         agregar_producto()
     
@@ -66,11 +66,18 @@ def menu():
         guardar_archivo()
 
     elif opcion == "6":
+        salir()
         print("************************")
         print("Saliendo del programa...")
         print("************************")
         time.sleep(2)
-        flag = False
 
     else:
         print("Usted eligió una opción que no esta en el menú, porfavor ingrese una opcion que este en el menu del 1 al 6 ")
+
+def salir():
+    print("************************")
+    print("Saliendo del programa...")
+    print("************************")
+    time.sleep(2)
+    flag = False
