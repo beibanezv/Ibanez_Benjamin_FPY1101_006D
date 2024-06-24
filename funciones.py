@@ -1,3 +1,5 @@
+import time
+
 inventario = [
     {
     'CODIGO':'CODIGO',
@@ -40,3 +42,7 @@ def guardar_archivo():
 
 def menu():
     print()
+
+def salir():
+    print("Saliendo del programa...")
+    time.sleep(2)
