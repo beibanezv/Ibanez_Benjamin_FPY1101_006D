@@ -1,6 +1,6 @@
 import funciones
 
-print("--- Bienvenido al programa de gestión de inventario de la tienda 'SCCOOBY DOO' ---")
+print("--- Bienvenido al programa de gestión de inventario de la tienda 'SCOOBY DOO' ---")
 while True:
     menu_salir = input("Ingrese 'm' si desea abrir el menú de opciones o ingrese 'x' para salir del programa.")
 
